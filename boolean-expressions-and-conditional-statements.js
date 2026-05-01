@@ -50,3 +50,15 @@ Add Customization and expand the game:
   - Use nested conditionals and logical operators to create complex outcomes.
 
 */
+const hasSword = true;
+console.log(`In the distance you see a diverging path in ${choice} : Do you explore the path?`);
+const choice2 = readline.question("Do you explore path 'yes' or 'no?'");
+if (choice2 === "yes" && hasSword) {
+  console.log("You find a monster lurking in the distance you defeat");
+}  else if (choice2 === "no" || !hasSword) {
+    console.log("You hear a scream in the distance not sure what it entails.");
+  }
+  else {
+    console.log("Your vision goes dark you're not sure what happened");
+  }
+
